@@ -1,0 +1,9 @@
+{
+    "widgets": [
+        {
+            "modulePath": "custom/orderconfigdata/widget/OrderConfigurationData",
+            "type": "custom.orderconfigdata.widget.OrderConfigurationData"
+        }
+    ],
+    "actions": []
+}
