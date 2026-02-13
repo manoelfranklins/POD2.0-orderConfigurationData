@@ -1,4 +1,4 @@
-# Order Configuration Data Widget
+# POD 2.0: Order Configuration Data Widget
 
 A POD 2.0 widget that displays custom configuration data (`customValues`) from the selected order.
 
@@ -8,6 +8,8 @@ A POD 2.0 widget that displays custom configuration data (`customValues`) from t
 - Auto-loads when an order is selected
 - Export to CSV/Excel
 - Filtering and sorting by attribute/value
+
+<img width="1428" height="377" alt="image" src="https://github.com/user-attachments/assets/4a9898a0-3c51-4879-938c-657c0d91f85b" />
 
 ## Installation
 
@@ -19,56 +21,32 @@ extension.json
 widget/
   OrderConfigurationData.js
 ```
-
-## Files
-
-```
-20displayOrderCustomData/
-├── extension.json
-├── README.md
-└── widget/
-    └── OrderConfigurationData.js
-```
-
-## extension.json
-
-```json
-{
-    "widgets": [
-        {
-            "modulePath": "custom/orderconfigdata/widget/OrderConfigurationData",
-            "type": "custom.orderconfigdata.widget.OrderConfigurationData"
-        }
-    ]
-}
-```
+<img width="1500" height="703" alt="image" src="https://github.com/user-attachments/assets/453abba3-f258-4125-9509-bda585e0b61a" />
 
 ## Usage
 
 1. Upload the extension to **Manage PODs 2.0** with namespace `custom/orderconfigdata`
+
+<img width="1500" height="703" alt="image" src="https://github.com/user-attachments/assets/453abba3-f258-4125-9509-bda585e0b61a" />
+
 2. Add the widget to a POD page
-3. Select an order in the worklist
-4. The widget automatically displays the order's customValues
 
-## Properties
+<img width="1904" height="590" alt="image" src="https://github.com/user-attachments/assets/98e64351-b6d9-4363-9eb2-07197a844cf7" />
 
-| Property | Description | Default |
-|----------|-------------|---------|
-| Visible | Show/hide the widget | true |
-| Auto Refresh | Auto-load on order selection | true |
-| Show Export Button | Show CSV export button | true |
-| Log to Console | Enable debug logging | true |
+3. The widget automatically displays the order's customValues
 
-## API
+<img width="1428" height="377" alt="image" src="https://github.com/user-attachments/assets/4a9898a0-3c51-4879-938c-657c0d91f85b" />
 
-This widget uses `OrderPublicApiClient` to fetch order data:
 
-```javascript
-const oClient = new OrderPublicApiClient();
-const oResponse = await oClient.getOrder({
-    plant: sPlant,
-    order: sOrderNumber
-});
-```
+## License
 
-See `POD2_API_Guide.md` for comprehensive API documentation.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Author
+
+Manoel Costa
+http://manoelcosta.com/
+
+---
+
+**Disclaimer:** This is a community extension and is not officially supported by SAP. Use at your own discretion.
